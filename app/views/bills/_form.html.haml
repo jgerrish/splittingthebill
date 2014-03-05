@@ -1,0 +1,10 @@
+= simple_form_for(@bill) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :bill_type
+    = f.input :url
+
+  .form-actions
+    = f.button :submit

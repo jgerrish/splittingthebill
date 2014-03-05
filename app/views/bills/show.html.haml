@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @bill.name
+%p
+  %b Bill type:
+  = @bill.bill_type
+%p
+  %b Url:
+  = @bill.url
+
+= link_to 'Edit', edit_bill_path(@bill)
+\|
+= link_to 'Back', bills_path
